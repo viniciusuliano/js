@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-top: 60px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#formulario{
+    background-color: rgb(57, 130, 212);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    border-radius: 10px;
+    gap: 15px;
+}
+
+#chapeu{
+    width: 100px;
+}
