@@ -8,11 +8,17 @@ function contar(){
     var resultadoContagem = document.getElementById('resultado')
     if(condicao.value == 0 || somatoria.value == 0){
         resultadoContagem.innerHTML = 'Numero invalido'
-    }else {    
-         for(iniciaContagem; iniciaContagem <= condicaoContagem; iniciaContagem+=somatoriaContagem){
-            resultadoContagem.innerHTML += ` ${ iniciaContagem }`
-            
+    }else { 
+        if(inicia < condicao){   
+         for(c = iniciaContagem; c <= condicaoContagem; c+=somatoriaContagem){
+            resultadoContagem.innerHTML += `${ c } \u{1F92F}`
+            console.log(c)
+        }
+    }else{
+        for(c = iniciaContagem; c>=condicaoContagem; c-=somatoriaContagem){
+            resultadoContagem.innerHTML += `${c} \u{1F92F}`
+            console.log(c)
         }
     }
-    
+}
 }

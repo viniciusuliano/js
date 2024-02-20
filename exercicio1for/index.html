@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Exercicios</title>
 </head>
 <body>
+    <div id="conteudo">
     <p>
         <input type="number" id="inicializador">
     
@@ -17,14 +19,12 @@
 
     <p>
         <input type="number" id="somador">
-        <input type="submit" value="contar" onclick="contar()">
     </p>
+    <input type="submit" value="contar" onclick="contar()" id="botao">
 
     <div id="resultado">
         Contagem iniciando...
     </div>
-    <div id="reset">
-        <input type="submit" value="resetar" onclick="resetar()">
     </div>
 </body>
 </html>
