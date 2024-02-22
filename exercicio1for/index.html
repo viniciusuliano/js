@@ -3,28 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Exercicios</title>
+    <title>Exercicio Contador 1</title>
 </head>
 <body>
-    <div id="conteudo">
-    <p>
-        <input type="number" id="inicializador">
-    
+    <p> Iniciar contagem:
+        <input type="number" id="inicia">
+        Finalizar contagem:
+        <input type="number" id="final">
     </p>
-    <p>
-        <input type="number" id="condicao">
+    <p> De quanto em quanto?
+        <input type="number" id="contador">
     </p>
-
-    <p>
-        <input type="number" id="somador">
-    </p>
-    <input type="submit" value="contar" onclick="contar()" id="botao">
-
-    <div id="resultado">
-        Contagem iniciando...
+    <button type="submit" id="somar">Iniciar contagem</button>
+    <div id="mostrar">
+        Contando...
     </div>
-    </div>
+    <script src="index.js"></script>
 </body>
 </html>
